@@ -38,7 +38,7 @@ module.exports = {
   },
   settings: {
     'import/extensions': ['.mjs', '.js', '.jsx', '.ts', '.tsx'],
-    'import/ignore': ['node_modules', `\\.(${'|'.join(createReactAppAssets.concat['json'])})$`],
+    'import/ignore': ['node_modules', `\\.(${createReactAppAssets.concat('json').join('|')})$`],
     'import/resolver': { node: { extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json'] } }
   }
 };
