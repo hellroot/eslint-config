@@ -65,3 +65,25 @@ Format all your TypeScript and JavaScript code:
 ```bash
 npx prettier --write '**/*.{js,jsx,ts,tsx}'
 ```
+
+## VSCode
+
+By default, ESLint plugin validates only `.js` and `.jsx` files.
+You should enable `.ts` and `.tsx` manually in your IDE settings:
+
+`settings.json`
+
+```json
+"eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+]
+```
