@@ -1,33 +1,29 @@
-# @hellroot/tslint-config
+# @hellroot/eslint-config
 
-[![npm](https://img.shields.io/npm/v/@hellroot/tslint-config.svg)](https://www.npmjs.com/package/@hellroot/tslint-config)
-[![dependencies status](https://img.shields.io/david/hellroot/tslint-config.svg)](https://david-dm.org/hellroot/tslint-config)
-[![dev dependencies status](https://img.shields.io/david/dev/hellroot/tslint-config.svg)](https://david-dm.org/hellroot/tslint-config?type=dev)
+[![npm](https://img.shields.io/npm/v/@hellroot/eslint-config.svg)](https://www.npmjs.com/package/@hellroot/eslint-config)
+[![dependencies status](https://img.shields.io/david/hellroot/eslint-config.svg)](https://david-dm.org/hellroot/eslint-config)
+[![dev dependencies status](https://img.shields.io/david/dev/hellroot/eslint-config.svg)](https://david-dm.org/hellroot/eslint-config?type=dev)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-A TSLint config for projects written in TypeScript with React.
+An ESLint config for projects written in TypeScript with React.
 
-It is compatible with [Prettier](https://prettier.io) and consists of rules from:
-
-- [`tslint:recommended`](https://github.com/palantir/tslint/blob/master/src/configs/recommended.ts)
-- [`tslint-react`](https://github.com/palantir/tslint-react)
-- [`tslint-config-prettier`](https://github.com/prettier/tslint-config-prettier)
+It is based on [airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) and [@typescript-eslint/recommended](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) configs and compatible with [Prettier](https://prettier.io).
 
 ## Installation
 
 ```bash
-npm install --save-dev prettier tslint @hellroot/tslint-config
+npm install --save-dev prettier eslint @hellroot/eslint-config
 ```
 
 ## Configuration
 
-Extend your TSLint config:
+Extend your ESLint config:
 
-`tslint.json`
+`.eslintrc.json`
 
 ```json
 {
-  "extends": ["@hellroot/tslint-config"]
+  "extends": ["@hellroot/eslint-config"]
 }
 ```
 
