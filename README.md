@@ -17,14 +17,24 @@ npm install --save-dev prettier eslint @hellroot/eslint-config
 
 ## Configuration
 
-Extend your ESLint config:
+Extend your ESLint config, select environments which you use and specify path to right `tsconfig.json`:
 
-`.eslintrc.json`
+`.eslintrc.js`
 
-```json
-{
-  "extends": ["@hellroot/eslint-config"]
-}
+```js
+const path = require('path');
+
+module.exports = {
+  extends: ['@hellroot/eslint-config'],
+  env: {
+    jest: true,
+    node: true,
+    browser: true
+  },
+  parserOptions: {
+    project: path.join(__dirname, 'tsconfig.json')
+  }
+};
 ```
 
 Configure EditorConfig:
