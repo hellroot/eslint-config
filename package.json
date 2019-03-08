@@ -18,9 +18,9 @@
     "config"
   ],
   "files": [
-    ".eslintrc.json"
+    ".eslintrc.js"
   ],
-  "main": ".eslintrc.json",
+  "main": ".eslintrc.js",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "1.4.2",
     "@typescript-eslint/parser": "1.4.2",
