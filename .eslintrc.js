@@ -10,18 +10,9 @@ const tsEslintOverrides = {
   '@typescript-eslint/interface-name-prefix': ['error', 'always']
 };
 
-const createReactAppAssets = [
-  'bmp',
-  'gif',
-  'jpg',
-  'jpeg',
-  'png',
-  'webp',
-  'svg',
-  'css',
-  'scss',
-  'sass'
-];
+const jsExtensions = ['.js', '.jsx'];
+const tsExtensions = ['.ts', '.tsx'];
+const assetsExtensions = ['jpg', 'jpeg', 'png', 'svg', 'css', 'scss', 'json'];
 
 module.exports = {
   extends: [
@@ -38,8 +29,9 @@ module.exports = {
   },
   settings: {
     react: { version: 'detect' },
-    'import/extensions': ['.mjs', '.js', '.jsx', '.ts', '.tsx'],
-    'import/ignore': ['node_modules', `\\.(${createReactAppAssets.concat('json').join('|')})$`],
-    'import/resolver': { node: { extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json'] } }
+    'import/extensions': jsExtensions.concat(tsExtensions),
+    'import/parsers': { '@typescript-eslint/parser': tsExtensions },
+    'import/ignore': ['node_modules', `\\.(${assetsExtensions.join('|')})$`],
+    'import/resolver': { node: { extensions: jsExtensions.concat(tsExtensions) } }
   }
 };
