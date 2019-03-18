@@ -1,5 +1,20 @@
 const airbnbOverrides = {
   'no-plusplus': 'off',
+  'no-restricted-syntax': [
+    'error',
+    {
+      selector: 'ForInStatement',
+      message: 'Use Object.{keys,values,entries}, and iterate over the resulting array.'
+    },
+    {
+      selector: 'LabeledStatement',
+      message: 'Labels are a form of GOTO; using them makes code hard to maintain and understand.'
+    },
+    {
+      selector: 'WithStatement',
+      message: '`with` is disallowed in strict mode because it makes code impossible to predict.'
+    }
+  ],
   'import/prefer-default-export': 'off',
   'react/prefer-stateless-function': 'off',
   'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }]
