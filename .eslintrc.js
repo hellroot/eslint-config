@@ -26,7 +26,7 @@ const tsEslintOverrides = {
 };
 
 const jsExtensions = ['.js', '.jsx'];
-const tsExtensions = ['.ts', '.tsx'];
+const tsExtensions = ['.ts', '.tsx', '.d.ts'];
 const assetsExtensions = ['jpg', 'jpeg', 'png', 'svg', 'css', 'scss', 'json'];
 
 module.exports = {
@@ -44,9 +44,9 @@ module.exports = {
   },
   settings: {
     react: { version: 'detect' },
+    'import/resolver': { typescript: {} },
     'import/extensions': jsExtensions.concat(tsExtensions),
     'import/parsers': { '@typescript-eslint/parser': tsExtensions },
-    'import/ignore': ['node_modules', `\\.(${assetsExtensions.join('|')})$`],
-    'import/resolver': { node: { extensions: jsExtensions.concat(tsExtensions) } }
+    'import/ignore': ['node_modules', `\\.(${assetsExtensions.join('|')})$`]
   }
 };
