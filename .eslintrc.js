@@ -16,6 +16,7 @@ const airbnbOverrides = {
     }
   ],
   'import/prefer-default-export': 'off',
+  'react/prop-types': 'off',
   'react/prefer-stateless-function': 'off',
   'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }]
 };
