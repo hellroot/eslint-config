@@ -12,7 +12,7 @@ It is based on [airbnb](https://github.com/airbnb/javascript/tree/master/package
 ## Installation
 
 ```bash
-npm install --save-dev prettier eslint @hellroot/eslint-config
+npm install --save-dev eslint prettier typescript @hellroot/eslint-config
 ```
 
 ## Configuration

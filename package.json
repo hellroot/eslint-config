@@ -34,7 +34,8 @@
   },
   "peerDependencies": {
     "eslint": "*",
-    "prettier": "*"
+    "prettier": "*",
+    "typescript": "*"
   },
   "devDependencies": {
     "prettier": "1.16.4"
