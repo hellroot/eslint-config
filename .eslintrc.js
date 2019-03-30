@@ -15,6 +15,7 @@ const airbnbOverrides = {
       message: '`with` is disallowed in strict mode because it makes code impossible to predict.'
     }
   ],
+  'import/named': 'off', // TODO: Remove after https://github.com/benmosher/eslint-plugin-import/pull/1304
   'import/prefer-default-export': 'off',
   'react/prop-types': 'off',
   'react/destructuring-assignment': 'off',
