@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/@hellroot/eslint-config.svg)](https://www.npmjs.com/package/@hellroot/eslint-config)
 [![dependencies status](https://img.shields.io/david/hellroot/eslint-config.svg)](https://david-dm.org/hellroot/eslint-config)
 [![dev dependencies status](https://img.shields.io/david/dev/hellroot/eslint-config.svg)](https://david-dm.org/hellroot/eslint-config?type=dev)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Greenkeeper badge](https://badges.greenkeeper.io/hellroot/eslint-config.svg)](https://greenkeeper.io/)
 
 An ESLint config for projects written in TypeScript with React.
 
