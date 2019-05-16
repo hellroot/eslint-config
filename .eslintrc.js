@@ -1,5 +1,6 @@
 const airbnbOverrides = {
   'class-methods-use-this': 'off',
+  'lines-between-class-members': 'off',
   'no-plusplus': 'off',
   'no-restricted-syntax': [
     'error',
