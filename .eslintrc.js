@@ -28,6 +28,7 @@ const airbnbOverrides = {
 
 const tsEslintOverrides = {
   '@typescript-eslint/explicit-function-return-type': 'off',
+  '@typescript-eslint/no-object-literal-type-assertion': 'off',
   '@typescript-eslint/interface-name-prefix': ['error', 'always']
 };
 
