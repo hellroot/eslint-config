@@ -21,6 +21,7 @@ const airbnbOverrides = {
   'import/no-cycle': 'off',
   'import/prefer-default-export': 'off',
   'react/prop-types': 'off',
+  'react/no-did-update-set-state': 'off',
   'react/destructuring-assignment': 'off',
   'react/prefer-stateless-function': 'off',
   'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }]
