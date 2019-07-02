@@ -45,10 +45,13 @@ module.exports = {
     'prettier/@typescript-eslint',
     'prettier/react'
   ],
+  plugins: ['react-hooks'],
   rules: {
     ...airbnbOverrides,
     ...tsEslintOverrides,
-    'prettier/prettier': 'warn'
+    'prettier/prettier': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error'
   },
   settings: {
     react: { version: 'detect' },
